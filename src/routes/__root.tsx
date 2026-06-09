@@ -1,10 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import {
-  Outlet,
-  Link,
-  createRootRouteWithContext,
-  useRouter,
-} from "@tanstack/react-router";
+import { Outlet, Link, createRootRouteWithContext, useRouter } from "@tanstack/react-router";
 
 import "../styles.css";
 import SEO from "../components/site/SEO";
@@ -79,16 +74,17 @@ function RootComponent() {
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "url": "https://letstreamHub.com/",
-      "name": "LetStreamHub",
-      "description": "Discover top-tier internet, streaming, and smart home solutions at LetStreamHub. We provide fast, reliable connectivity tailored for your needs."
+      url: "https://letstreamHub.com/",
+      name: "LetStreamHub",
+      description:
+        "Discover top-tier internet, streaming, and smart home solutions at LetStreamHub. We provide fast, reliable connectivity tailored for your needs.",
     },
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "LetStreamHub",
-      "url": "https://letstreamHub.com/",
-    }
+      name: "LetStreamHub",
+      url: "https://letstreamHub.com/",
+    },
   ];
 
   return (

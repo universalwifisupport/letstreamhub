@@ -1,5 +1,21 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Phone, Zap, Wifi, Tv, Video, Home, Briefcase, Star, MapPin, ArrowRight, ShieldCheck, ChevronDown, Play, Info, ChevronRight } from "lucide-react";
+import {
+  Phone,
+  Zap,
+  Wifi,
+  Tv,
+  Video,
+  Home,
+  Briefcase,
+  Star,
+  MapPin,
+  ArrowRight,
+  ShieldCheck,
+  ChevronDown,
+  Play,
+  Info,
+  ChevronRight,
+} from "lucide-react";
 import { useRef, useState } from "react";
 import { Layout } from "@/components/site/Layout";
 import SEO from "@/components/site/SEO";
@@ -21,13 +37,34 @@ export const Route = createFileRoute("/")({
 });
 
 const faqs = [
-  { q: "Are you an official cable or internet service provider?", a: "No. We are an independent third-party service assistance platform and we do not provide internet, cable, or streaming service plans." },
-  { q: "Do you sell internet, cable, or streaming plans?", a: "No. We provide guidance, assistance, and information only. Provider plans and billing are handled directly by the service companies." },
-  { q: "Do you charge for your services?", a: "Yes. We charge a separate service assistance fee for the independent help we provide. Provider charges remain separate." },
-  { q: "Will I still be billed by my service provider?", a: "Yes. Provider billing remains unchanged. Our role is to assist you with provider processes and answer general questions." },
-  { q: "Do you need my account passwords or sensitive information?", a: "No. We never request provider passwords or sensitive credentials. We only ask for the minimum information needed to assist you." },
-  { q: "Which providers do you support?", a: "We may reference multiple providers for informational purposes only. We are not affiliated with, endorsed by, or sponsored by any provider." },
-  { q: "Are your services refundable?", a: "Yes. Refund requests may be submitted within 7 to 15 days of service purchase, subject to the eligibility terms outlined in our Refund Policy." },
+  {
+    q: "Are you an official cable or internet service provider?",
+    a: "No. We are an independent third-party service assistance platform and we do not provide internet, cable, or streaming service plans.",
+  },
+  {
+    q: "Do you sell internet, cable, or streaming plans?",
+    a: "No. We provide guidance, assistance, and information only. Provider plans and billing are handled directly by the service companies.",
+  },
+  {
+    q: "Do you charge for your services?",
+    a: "Yes. We charge a separate service assistance fee for the independent help we provide. Provider charges remain separate.",
+  },
+  {
+    q: "Will I still be billed by my service provider?",
+    a: "Yes. Provider billing remains unchanged. Our role is to assist you with provider processes and answer general questions.",
+  },
+  {
+    q: "Do you need my account passwords or sensitive information?",
+    a: "No. We never request provider passwords or sensitive credentials. We only ask for the minimum information needed to assist you.",
+  },
+  {
+    q: "Which providers do you support?",
+    a: "We may reference multiple providers for informational purposes only. We are not affiliated with, endorsed by, or sponsored by any provider.",
+  },
+  {
+    q: "Are your services refundable?",
+    a: "Yes. Refund requests may be submitted within 7 to 15 days of service purchase, subject to the eligibility terms outlined in our Refund Policy.",
+  },
 ];
 
 const services = [
@@ -40,23 +77,73 @@ const services = [
 ];
 
 const showcase = [
-  { icon: Video, title: "Clear provider options", text: "Understand your streaming and cable options without confusing jargon." },
-  { icon: Zap, title: "Practical connection help", text: "Get guidance for broadband, Wi-Fi, and network troubleshooting steps." },
-  { icon: ShieldCheck, title: "Independent support", text: "Receive neutral assistance that is not tied to any provider relationship." },
-  { icon: Wifi, title: "Home network clarity", text: "Learn what matters for reliable Wi-Fi coverage and provider setup procedures." },
+  {
+    icon: Video,
+    title: "Clear provider options",
+    text: "Understand your streaming and cable options without confusing jargon.",
+  },
+  {
+    icon: Zap,
+    title: "Practical connection help",
+    text: "Get guidance for broadband, Wi-Fi, and network troubleshooting steps.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Independent support",
+    text: "Receive neutral assistance that is not tied to any provider relationship.",
+  },
+  {
+    icon: Wifi,
+    title: "Home network clarity",
+    text: "Learn what matters for reliable Wi-Fi coverage and provider setup procedures.",
+  },
 ];
 
 const reasons = [
-  { title: "Neutral advice", text: "We offer independent guidance on service choices and provider processes, not product sales.", img: fiber },
-  { title: "Practical clarity", text: "Learn the right questions to ask your provider and how to move forward with confidence.", img: support },
-  { title: "Transparent fees", text: "Our service assistance fee is separate from any provider charges you may receive.", img: homeOffice },
-  { title: "No affiliation", text: "We do not claim endorsement or partnership with any cable, internet, or streaming provider.", img: business },
+  {
+    title: "Neutral advice",
+    text: "We offer independent guidance on service choices and provider processes, not product sales.",
+    img: fiber,
+  },
+  {
+    title: "Practical clarity",
+    text: "Learn the right questions to ask your provider and how to move forward with confidence.",
+    img: support,
+  },
+  {
+    title: "Transparent fees",
+    text: "Our service assistance fee is separate from any provider charges you may receive.",
+    img: homeOffice,
+  },
+  {
+    title: "No affiliation",
+    text: "We do not claim endorsement or partnership with any cable, internet, or streaming provider.",
+    img: business,
+  },
 ];
 
 const testimonials = [
-  { name: "Marcus & Eliza Vance", role: "Brooklyn, NY", quote: "The advisor helped us understand our local options and the next steps for our cable and internet questions.", stars: 5 },
-  { name: "Priya Ramachandran", role: "Austin, TX — Designer", quote: "Their guidance made it easier to talk to my provider and avoid confusion during service setup.", stars: 5 },
-  { name: "The Okafor Family", role: "Atlanta, GA", quote: "We finally had a clear plan for improving our home network without feeling pressured by provider sales calls.", stars: 5 },
+  {
+    name: "Marcus & Eliza Vance",
+    role: "Brooklyn, NY",
+    quote:
+      "The advisor helped us understand our local options and the next steps for our cable and internet questions.",
+    stars: 5,
+  },
+  {
+    name: "Priya Ramachandran",
+    role: "Austin, TX — Designer",
+    quote:
+      "Their guidance made it easier to talk to my provider and avoid confusion during service setup.",
+    stars: 5,
+  },
+  {
+    name: "The Okafor Family",
+    role: "Atlanta, GA",
+    quote:
+      "We finally had a clear plan for improving our home network without feeling pressured by provider sales calls.",
+    stars: 5,
+  },
 ];
 
 function HomePage() {
@@ -83,7 +170,13 @@ function Hero() {
   return (
     <section className="relative min-h-[92vh] flex items-end overflow-hidden -mt-20 pt-24 pb-24">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Family streaming cinematic 4K content" width={1920} height={1080} className="w-full h-full object-cover" />
+        <img
+          src={heroImg}
+          alt="Family streaming cinematic 4K content"
+          width={1920}
+          height={1080}
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-hero" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent" />
       </div>
@@ -110,7 +203,10 @@ function Hero() {
         </Reveal>
         <Reveal delay={400}>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a href="/contact" className="group inline-flex items-center gap-3 px-8 py-4 rounded-sm bg-primary text-primary-foreground font-bold uppercase tracking-wider text-sm hover:bg-primary/90 transition-colors">
+            <a
+              href="/contact"
+              className="group inline-flex items-center gap-3 px-8 py-4 rounded-sm bg-primary text-primary-foreground font-bold uppercase tracking-wider text-sm hover:bg-primary/90 transition-colors"
+            >
               Compare Plans
             </a>
             <a
@@ -135,24 +231,42 @@ function ServicesRow() {
     <section id="services" className="py-20 relative">
       <div className="container mx-auto px-6 lg:px-10 mb-8">
         <Reveal>
-          <h2 className="font-display text-3xl md:text-4xl tracking-wide">Top Picks <span className="text-primary">for Your Home</span></h2>
+          <h2 className="font-display text-3xl md:text-4xl tracking-wide">
+            Top Picks <span className="text-primary">for Your Home</span>
+          </h2>
         </Reveal>
       </div>
       <div className="relative group">
-        <button onClick={() => scroll(-1)} aria-label="Scroll left" className="hidden md:grid absolute left-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 place-items-center bg-black/70 hover:bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+        <button
+          onClick={() => scroll(-1)}
+          aria-label="Scroll left"
+          className="hidden md:grid absolute left-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 place-items-center bg-black/70 hover:bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+        >
           <ChevronRight className="w-6 h-6 rotate-180" />
         </button>
-        <button onClick={() => scroll(1)} aria-label="Scroll right" className="hidden md:grid absolute right-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 place-items-center bg-black/70 hover:bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+        <button
+          onClick={() => scroll(1)}
+          aria-label="Scroll right"
+          className="hidden md:grid absolute right-2 top-1/2 -translate-y-1/2 z-20 w-12 h-12 place-items-center bg-black/70 hover:bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+        >
           <ChevronRight className="w-6 h-6" />
         </button>
-        <div ref={scroller} className="scroll-row flex gap-3 overflow-x-auto px-6 lg:px-10 snap-x snap-mandatory pb-4">
+        <div
+          ref={scroller}
+          className="scroll-row flex gap-3 overflow-x-auto px-6 lg:px-10 snap-x snap-mandatory pb-4"
+        >
           {services.map((s) => (
             <Link
               key={s.title}
               to="/services"
               className="netflix-tilt snap-start relative shrink-0 w-[280px] md:w-[340px] aspect-[16/10] rounded-md overflow-hidden bg-card group/card"
             >
-              <img src={s.img} alt={s.title} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+              <img
+                src={s.img}
+                alt={s.title}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
               <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-sm bg-primary text-primary-foreground text-[10px] font-bold uppercase tracking-widest">
                 <s.icon className="w-3 h-3" /> {s.tag}
@@ -177,10 +291,15 @@ function Showcase() {
       <div className="container mx-auto px-6 lg:px-10">
         <Reveal>
           <div className="max-w-3xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary">The Experience</p>
-            <h2 className="font-display text-4xl md:text-6xl mt-3 tracking-wide">Better connectivity. <span className="text-primary">Easier choices.</span></h2>
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary">
+              The Experience
+            </p>
+            <h2 className="font-display text-4xl md:text-6xl mt-3 tracking-wide">
+              Better connectivity. <span className="text-primary">Easier choices.</span>
+            </h2>
             <p className="text-muted-foreground mt-5 leading-relaxed max-w-xl">
-              We help you find the right streaming, cable, and internet services for your home with clear, actionable guidance.
+              We help you find the right streaming, cable, and internet services for your home with
+              clear, actionable guidance.
             </p>
           </div>
         </Reveal>
@@ -216,7 +335,8 @@ function Coverage() {
                 Independent assistance, <span className="text-primary">nationwide</span>
               </h2>
               <p className="mt-6 text-muted-foreground leading-relaxed max-w-lg">
-                We support users across all 50 states with general guidance on local cable, internet, and streaming questions.
+                We support users across all 50 states with general guidance on local cable,
+                internet, and streaming questions.
               </p>
 
               <form
@@ -250,8 +370,12 @@ function Coverage() {
                   { n: 1, s: "", l: "Year Launched" },
                 ].map((stat) => (
                   <div key={stat.l} className="border-l-2 border-primary pl-4">
-                    <div className="font-display text-4xl tracking-wide"><Counter to={stat.n} suffix={stat.s} /></div>
-                    <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">{stat.l}</div>
+                    <div className="font-display text-4xl tracking-wide">
+                      <Counter to={stat.n} suffix={stat.s} />
+                    </div>
+                    <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">
+                      {stat.l}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -274,19 +398,35 @@ function Coverage() {
                   strokeWidth="1"
                 />
                 {[
-                  { x: 110, y: 140 }, { x: 180, y: 110 }, { x: 230, y: 160 }, { x: 280, y: 130 },
-                  { x: 330, y: 180 }, { x: 380, y: 140 }, { x: 150, y: 200 }, { x: 250, y: 220 }, { x: 350, y: 220 },
+                  { x: 110, y: 140 },
+                  { x: 180, y: 110 },
+                  { x: 230, y: 160 },
+                  { x: 280, y: 130 },
+                  { x: 330, y: 180 },
+                  { x: 380, y: 140 },
+                  { x: 150, y: 200 },
+                  { x: 250, y: 220 },
+                  { x: 350, y: 220 },
                 ].map((p, i) => (
                   <g key={i}>
                     <circle cx={p.x} cy={p.y} r="20" fill="url(#glow)" />
                     <circle cx={p.x} cy={p.y} r="3" fill="oklch(0.55 0.24 27)">
-                      <animate attributeName="r" values="3;6;3" dur="2.5s" begin={`${i * 0.3}s`} repeatCount="indefinite" />
+                      <animate
+                        attributeName="r"
+                        values="3;6;3"
+                        dur="2.5s"
+                        begin={`${i * 0.3}s`}
+                        repeatCount="indefinite"
+                      />
                     </circle>
                   </g>
                 ))}
               </svg>
               <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-xs uppercase tracking-widest text-muted-foreground">
-                <span><span className="inline-block w-2 h-2 rounded-full bg-primary mr-2" />Active Coverage</span>
+                <span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-primary mr-2" />
+                  Active Coverage
+                </span>
                 <span className="text-primary">Live Network</span>
               </div>
             </div>
@@ -303,8 +443,12 @@ function WhySwitch() {
       <div className="container mx-auto px-6 lg:px-10">
         <Reveal>
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary">Why Choose Us</p>
-            <h2 className="font-display text-4xl md:text-6xl mt-3 tracking-wide">Expert help for <span className="text-primary">your home services</span></h2>
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary">
+              Why Choose Us
+            </p>
+            <h2 className="font-display text-4xl md:text-6xl mt-3 tracking-wide">
+              Expert help for <span className="text-primary">your home services</span>
+            </h2>
           </div>
         </Reveal>
 
@@ -312,12 +456,21 @@ function WhySwitch() {
           {reasons.map((r, i) => (
             <Reveal key={r.title} delay={i * 80}>
               <article className="relative rounded-md overflow-hidden group h-80 border border-border/40">
-                <img src={r.img} alt={r.title} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img
+                  src={r.img}
+                  alt={r.title}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/20" />
-                <div className="absolute top-4 left-4 font-display text-5xl text-primary opacity-80">0{i + 1}</div>
+                <div className="absolute top-4 left-4 font-display text-5xl text-primary opacity-80">
+                  0{i + 1}
+                </div>
                 <div className="absolute bottom-0 inset-x-0 p-6">
                   <h3 className="font-display text-2xl md:text-3xl tracking-wide">{r.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed max-w-md">{r.text}</p>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed max-w-md">
+                    {r.text}
+                  </p>
                 </div>
               </article>
             </Reveal>
@@ -336,15 +489,26 @@ function Testimonials() {
       <div className="container mx-auto px-6 lg:px-10 relative">
         <Reveal>
           <div className="max-w-2xl mb-12">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary">Customer Stories</p>
-            <h2 className="font-display text-4xl md:text-6xl mt-3 tracking-wide">Trusted in 50,000+ <span className="text-primary">homes</span></h2>
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary">
+              Customer Stories
+            </p>
+            <h2 className="font-display text-4xl md:text-6xl mt-3 tracking-wide">
+              Trusted in 50,000+ <span className="text-primary">homes</span>
+            </h2>
           </div>
         </Reveal>
 
         <Reveal>
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-5 relative">
-              <img src={customers} alt="Happy letstream Hub customers" width={800} height={800} loading="lazy" className="w-full aspect-square object-cover rounded-md shadow-elegant" />
+              <img
+                src={customers}
+                alt="Happy letstream Hub customers"
+                width={800}
+                height={800}
+                loading="lazy"
+                className="w-full aspect-square object-cover rounded-md shadow-elegant"
+              />
               <div className="absolute -bottom-5 -right-5 bg-primary px-5 py-3 rounded-sm">
                 <div className="font-display text-3xl">4.9★</div>
                 <div className="text-[10px] uppercase tracking-widest">Avg Rating</div>
@@ -389,7 +553,9 @@ function FAQ() {
         <Reveal>
           <div className="mb-12">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary">FAQ</p>
-            <h2 className="font-display text-4xl md:text-6xl mt-3 tracking-wide">Questions, <span className="text-primary">answered</span></h2>
+            <h2 className="font-display text-4xl md:text-6xl mt-3 tracking-wide">
+              Questions, <span className="text-primary">answered</span>
+            </h2>
           </div>
         </Reveal>
 
@@ -402,9 +568,13 @@ function FAQ() {
                   className="w-full flex items-center justify-between gap-4 p-6 text-left hover:bg-card transition-colors"
                 >
                   <span className="font-display text-xl tracking-wide">{f.q}</span>
-                  <ChevronDown className={`w-5 h-5 text-primary flex-none transition-transform ${open === i ? "rotate-180" : ""}`} />
+                  <ChevronDown
+                    className={`w-5 h-5 text-primary flex-none transition-transform ${open === i ? "rotate-180" : ""}`}
+                  />
                 </button>
-                <div className={`grid transition-all duration-300 ${open === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
+                <div
+                  className={`grid transition-all duration-300 ${open === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+                >
                   <div className="overflow-hidden">
                     <p className="px-6 pb-6 text-muted-foreground leading-relaxed">{f.a}</p>
                   </div>
@@ -422,13 +592,21 @@ function FinalCTA() {
   return (
     <section className="py-10 relative overflow-hidden">
       <div className="absolute inset-0">
-        <img src={fiber} alt="" aria-hidden loading="lazy" className="w-full h-full object-cover opacity-30" />
+        <img
+          src={fiber}
+          alt=""
+          aria-hidden
+          loading="lazy"
+          className="w-full h-full object-cover opacity-30"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20" />
       </div>
       <div className="container mx-auto px-6 lg:px-10 relative">
         <div className="max-w-3xl mx-auto text-center">
           <Reveal>
-            <h2 className="font-display text-5xl md:text-7xl tracking-wide">Find your <span className="text-primary">perfect plan</span> today.</h2>
+            <h2 className="font-display text-5xl md:text-7xl tracking-wide">
+              Find your <span className="text-primary">perfect plan</span> today.
+            </h2>
             <p className="mt-6 text-muted-foreground max-w-xl mx-auto leading-relaxed">
               Speak with an advisor to compare streaming, cable, and internet options for your home.
             </p>
@@ -439,7 +617,10 @@ function FinalCTA() {
               >
                 (888) 478-6124
               </a>
-              <Link to="/contact" className="inline-flex items-center gap-3 px-8 py-4 rounded-sm bg-white/15 backdrop-blur text-foreground font-bold uppercase tracking-wider text-sm hover:bg-white/25 transition-colors">
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-sm bg-white/15 backdrop-blur text-foreground font-bold uppercase tracking-wider text-sm hover:bg-white/25 transition-colors"
+              >
                 Contact Us <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

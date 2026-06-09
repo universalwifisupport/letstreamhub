@@ -11,6 +11,7 @@ This site is configured to automatically build and deploy to GitHub Pages using 
 ## Setup Steps
 
 ### 1. Enable GitHub Pages
+
 - Go to your repository on GitHub
 - Navigate to **Settings** → **Pages**
 - Under "Source", select **Deploy from a branch**
@@ -19,6 +20,7 @@ This site is configured to automatically build and deploy to GitHub Pages using 
 - Click **Save**
 
 ### 2. Configure Custom Domain (Optional)
+
 If you have a custom domain (e.g., `letstreamHub.com`):
 
 - In repository **Settings** → **Pages**
@@ -40,11 +42,13 @@ If you have a custom domain (e.g., `letstreamHub.com`):
 ### 3. Deploy
 
 Once configured, the workflow will:
+
 1. **Trigger** on every push to `main` or `master`
 2. **Build** the site using `npm run build`
 3. **Deploy** to `gh-pages` branch (published automatically)
 
 View your site at:
+
 - Without custom domain: `https://<username>.github.io/<repo-name>`
 - With custom domain: `https://letstreamHub.com`
 
@@ -53,6 +57,7 @@ View your site at:
 `.github/workflows/deploy.yml`
 
 The workflow uses:
+
 - **Node.js 18.x** (adjust in the workflow file if needed)
 - **peaceiris/actions-gh-pages** action for deployment
 - Automatic caching of npm dependencies for faster builds
@@ -60,16 +65,19 @@ The workflow uses:
 ## Troubleshooting
 
 ### Build fails
+
 - Check the **Actions** tab → click the failed workflow
 - Review logs for errors (usually missing dependencies or syntax issues)
 - Run locally: `npm ci && npm run build`
 
 ### Site not updating
+
 - Verify the workflow ran successfully (green checkmark in Actions tab)
 - Clear browser cache (Ctrl+Shift+Delete or Cmd+Shift+Delete)
 - Check GitHub Pages settings → ensure it's pointing to `gh-pages` branch
 
 ### Custom domain not working
+
 - Verify DNS records are correctly configured
 - Wait 24 hours for DNS propagation
 - Check CNAME file was created: repository should have a `CNAME` file in `gh-pages` branch

@@ -27,11 +27,11 @@ export function SupportPopup() {
       className="fixed inset-0 z-[999] flex items-center justify-center p-4"
     >
       {/* Backdrop */}
-      <div 
-        className="absolute inset-0 bg-black/80 backdrop-blur-sm cursor-pointer" 
+      <div
+        className="absolute inset-0 bg-black/80 backdrop-blur-sm cursor-pointer"
         onClick={close}
       />
-      
+
       {/* Popup Content */}
       <div className="relative animate-pop-in w-full max-w-lg bg-card border border-primary/40 rounded-md shadow-2xl overflow-hidden z-10">
         <div className="absolute inset-x-0 top-0 h-1 bg-gradient-red" />
@@ -48,7 +48,10 @@ export function SupportPopup() {
             <Wifi className="w-7 h-7 text-primary-foreground" />
           </div>
 
-          <h2 id="support-popup-title" className="font-display text-4xl md:text-5xl mt-6 tracking-wide">
+          <h2
+            id="support-popup-title"
+            className="font-display text-4xl md:text-5xl mt-6 tracking-wide"
+          >
             Internet or Cable <span className="text-primary">Not Working?</span>
           </h2>
 
