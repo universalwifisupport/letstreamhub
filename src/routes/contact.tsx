@@ -56,6 +56,12 @@ function ContactPage() {
                   onSubmit={(e) => {
                     e.preventDefault();
                     setSubmitted(true);
+                    // Google Ads Conversion tracking
+                    if (typeof window !== "undefined" && (window as any).gtag) {
+                      (window as any).gtag("event", "conversion", {
+                        send_to: "AW-18216714134/nfKBCPy_rLwcEJb_s-5D",
+                      });
+                    }
                   }}
                   className="space-y-5"
                 >
