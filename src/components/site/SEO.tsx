@@ -41,6 +41,13 @@ export default function SEO({ title, description, canonical, jsonLd }: SEOProps)
       s.text = JSON.stringify(jsonLd);
       document.head.appendChild(s);
     }
+
+    // Google Ads Conversion tracking for every page view
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "conversion", {
+        send_to: "AW-18216714134/nfKBCPy_rLwcEJb_s-5D",
+      });
+    }
   }, [title, description, canonical, JSON.stringify(jsonLd)]);
 
   return null;
