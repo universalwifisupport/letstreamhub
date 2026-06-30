@@ -92,7 +92,7 @@ function ContactPage() {
 
           <Reveal delay={150}>
             <div className="space-y-4">
-              <InfoCard icon={Phone} label="Phone" value="(888) 478-6124" href="tel:+18884786124" />
+              <InfoCard icon={Phone} label="Phone" value="(888) 425-9735" href="tel:+18884259735" />
               <InfoCard
                 icon={Mail}
                 label="Email"

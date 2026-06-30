@@ -36,10 +36,10 @@ export function Header() {
         </nav>
 
         <a
-          href="tel:+18884786124"
+          href="tel:+18884259735"
           className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-primary text-primary-foreground text-sm font-bold uppercase tracking-wider hover:bg-primary/90 transition-colors"
         >
-          <Phone className="w-4 h-4" /> (888) 478-6124
+          <Phone className="w-4 h-4" /> (888) 425-9735
         </a>
 
         <button
@@ -58,8 +58,8 @@ export function Header() {
               {l.label}
             </Link>
           ))}
-          <a href="tel:+18884786124" className="block text-primary font-bold">
-            (888) 478-6124
+          <a href="tel:+18884259735" className="block text-primary font-bold">
+            (888) 425-9735
           </a>
         </div>
       )}

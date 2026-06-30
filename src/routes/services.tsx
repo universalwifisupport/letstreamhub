@@ -137,10 +137,10 @@ function ServicesPage() {
                     ))}
                   </ul>
                   <a
-                    href="tel:(888) 478-6124"
+                    href="tel:+18884259735"
                     className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-red text-primary-foreground shadow-glow-red hover:scale-105 transition-transform"
                   >
-                    <Phone className="w-4 h-4" /> (888) 478-6124
+                    <Phone className="w-4 h-4" /> (888) 425-9735
                   </a>
                 </div>
               </article>

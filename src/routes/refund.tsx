@@ -50,8 +50,8 @@ function RefundPage() {
                 hello@letstreamHub.com
               </a>{" "}
               or call{" "}
-              <a href="tel:+18884786124" className="text-primary underline">
-                (888) 478-6124
+              <a href="tel:+18884259735" className="text-primary underline">
+                (888) 425-9735
               </a>
               .
             </Section>

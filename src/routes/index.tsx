@@ -210,10 +210,10 @@ function Hero() {
               Compare Plans
             </a>
             <a
-              href="tel:+18884786124"
+              href="tel:+18884259735"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-sm bg-white/15 backdrop-blur text-foreground font-bold uppercase tracking-wider text-sm hover:bg-white/25 transition-colors"
             >
-              (888) 478-6124
+              (888) 425-9735
             </a>
           </div>
         </Reveal>
@@ -612,10 +612,10 @@ function FinalCTA() {
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
               <a
-                href="tel:+18884786124"
+                href="tel:+18884259735"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-sm bg-primary text-primary-foreground font-bold uppercase tracking-wider text-sm hover:bg-primary/90 transition-colors"
               >
-                (888) 478-6124
+                (888) 425-9735
               </a>
               <Link
                 to="/contact"

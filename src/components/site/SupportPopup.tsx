@@ -60,10 +60,10 @@ export function SupportPopup() {
           </p>
 
           <a
-            href="tel:+18884786124"
+            href="tel:+18884259735"
             className="mt-7 inline-flex items-center justify-center gap-3 w-full md:w-auto px-10 py-4 bg-primary text-primary-foreground font-bold uppercase tracking-[0.2em] text-sm rounded-sm shadow-glow-red hover:bg-primary/90 transition-colors"
           >
-            <Phone className="w-4 h-4" /> (888) 478-6124
+            <Phone className="w-4 h-4" /> (888) 425-9735
           </a>
 
           <p className="mt-5 text-xs text-muted-foreground/80">
