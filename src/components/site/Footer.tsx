@@ -75,6 +75,12 @@ export function Footer() {
                 href="tel:+18884259735"
               />
               <ContactItem
+                icon={Phone}
+                label="Phone"
+                value="(866) 867-5320"
+                href="tel:+18668675320"
+              />
+              <ContactItem
                 icon={Mail}
                 label="Email Support"
                 value="hello@letstreamHub.com"
