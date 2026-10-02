@@ -77,8 +77,8 @@ export function Footer() {
               <ContactItem
                 icon={Phone}
                 label="Phone"
-                value="(888) 227-0355"
-                href="tel:+18882270355"
+                value="(866) 867-5320"
+                href="tel:+18668675320"
               />
               <ContactItem
                 icon={Mail}
